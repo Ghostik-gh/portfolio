@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
-import { getAllCategories } from '../food-api/src/api';
-import { Preloader } from '../food-api/src/components/Preloader';
-import { CategoryList } from '../food-api/src/components/CategoryList';
+import { getAllCategories } from '../food-api/api';
+import { Preloader } from '../food-api/Preloader';
+import { CategoryList } from '../food-api/CategoryList';
 
 function FoodAPI() {
   const [catalog, setCatalog] = useState([]);

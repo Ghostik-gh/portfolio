@@ -1,9 +1,9 @@
-import { MealList } from '../food-api/src/components/MealList';
+import { MealList } from '../food-api/MealList';
 import { useState } from 'react';
 import { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import { getFilteredCategory } from '../food-api/src/api';
-import { Preloader } from '../food-api/src/components/Preloader';
+import { getFilteredCategory } from '../food-api/api';
+import { Preloader } from '../food-api/Preloader';
 
 function Category() {
   const { name } = useParams();

@@ -8,14 +8,6 @@ body {
 }
 
 
-.nav {
-  padding: 0 1rem
-}
-
-.content {
-  min-height: calc(100vh - 70px - 64px);
-}
-
 .list{
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(255px, 1fr));

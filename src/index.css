@@ -11,10 +11,6 @@ i {
   font-size: 2rem
 }
 
-.nav {
-  padding: 0 1rem
-}
-
 .content {
   min-height: calc(100vh - 70px - 64px);
 }
@@ -31,4 +27,23 @@ i {
   align-content: center;
   align-items: center;
   justify-content: center;
+}
+.arrow-left{
+  width: 42px;
+  height: 42px;
+}
+
+.arrow-left::before{
+  cursor: pointer;
+  font-size: 3rem;
+  background-color: var(--bs-gray-600);
+  border-radius: 50%;
+}
+
+.flex-direction-column{
+  flex-direction: column;
+}
+
+.card-title{
+  font-size: large;
 }

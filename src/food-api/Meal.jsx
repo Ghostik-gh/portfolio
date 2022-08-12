@@ -8,13 +8,13 @@ function Meal(props) {
       <div className="card-image">
         <img src={strMealThumb} alt={strMeal} />
       </div>
-      <div className="card-content">
+      <div className="card-body d-flex flex-direction-column align-items-center">
         <span className="card-title">{strMeal}</span>
-      </div>
-      <div className="card-action">
-        <Link to={`/food-api/meal/${idMeal}`} className="btn">
-          Watch recipe
-        </Link>
+        <div className="card-action">
+          <Link to={`/food-api/meal/${idMeal}`} className="btn btn-dark">
+            Watch recipe
+          </Link>
+        </div>
       </div>
     </div>
   );

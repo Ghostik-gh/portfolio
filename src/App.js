@@ -4,7 +4,7 @@ import { Layout } from './components/Layout';
 import { Portfolio } from './pages/Portfolio';
 import { NotFound } from './pages/NotFound';
 import { Category } from './pages/Category';
-import { Recipe } from './food-api/src/components/Recipe';
+import { Recipe } from './pages/Recipe';
 import { FoodAPI } from './pages/FoodAPI';
 
 function App() {

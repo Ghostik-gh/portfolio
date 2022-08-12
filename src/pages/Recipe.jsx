@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { Preloader } from './Preloader';
-import { getMealById } from '../api';
+import { Preloader } from '../food-api/Preloader';
+import { getMealById } from '../food-api/api';
 
 function Recipe() {
   const { id } = useParams();
@@ -25,7 +25,6 @@ function Recipe() {
           <h5>Category: {recipe.strCategory}</h5>
           {recipe.strArea ? <h5>Area: {recipe.strArea}</h5> : null}
           <p>{recipe.strInstructions}</p>
-          <h5>Video Recipe</h5>
           <table className="centered">
             <thead>
               <tr>
@@ -43,24 +42,30 @@ function Recipe() {
                     </tr>
                   );
                 }
+                return null;
               })}
             </tbody>
           </table>
           {recipe.strYoutube ? (
-            <iframe
-              width="700"
-              height="400"
-              src={`https://www.youtube.com/embed/${recipe.strYoutube.slice(
-                -11
-              )}`}
-              allowFullScreen
-            />
+            <div className="center video">
+              <h5 className="center">Video Recipe</h5>
+              <iframe
+                title="123"
+                width="700"
+                height="400"
+                src={`https://www.youtube.com/embed/${recipe.strYoutube.slice(
+                  -11
+                )}`}
+                allowFullScreen
+              />
+            </div>
           ) : null}
         </div>
       )}
-      <button onClick={() => navigate(-1)} className="btn">
-        Go Back
-      </button>
+      <i
+        className="fixed-bottom ms-4 mb-4 bi-arrow-left arrow-left"
+        onClick={() => navigate(-1)}
+      />
     </>
   );
 }

@@ -7,14 +7,17 @@ function CategoryItem(props) {
       <div className="card-image">
         <img src={strCategoryThumb} alt={strCategory} />
       </div>
-      <div className="card-content">
+      <div className="card-body d-flex flex-direction-column align-items-center">
         <span className="card-title">{strCategory}</span>
         <p>{strCategoryDescription.slice(0, 100)}...</p>
-      </div>
-      <div className="card-action">
-        <Link to={`/food-api/category/${strCategory}`} className="btn">
-          Watch Category
-        </Link>
+        <div className="card-action">
+          <Link
+            to={`/food-api/category/${strCategory}`}
+            className="btn btn-dark"
+          >
+            Watch Category
+          </Link>
+        </div>
       </div>
     </div>
   );
