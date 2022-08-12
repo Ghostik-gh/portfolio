@@ -7,7 +7,7 @@ function CategoryItem(props) {
       <div className="card-image">
         <img src={strCategoryThumb} alt={strCategory} />
       </div>
-      <div className="card-body d-flex flex-direction-column align-items-center">
+      <div className="card-body card-food d-flex flex-direction-column align-items-center">
         <span className="card-title">{strCategory}</span>
         <p>{strCategoryDescription.slice(0, 100)}...</p>
         <div className="card-action">

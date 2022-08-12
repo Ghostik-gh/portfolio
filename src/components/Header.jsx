@@ -10,12 +10,14 @@ function Header() {
               to="/"
               className="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none"
             >
-              <span className="py-3">Portfolio Ghostik-gh</span>
+              <span id="top" className="py-3">
+                Portfolio Ghostik-gh
+              </span>
             </Link>
 
             <ul className="bd-subnavbar nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center">
               <li>
-                <a href="/#123" className="nav-link px-2 text-white">
+                <a href="/#top" className="nav-link px-2 text-white">
                   Home
                 </a>
               </li>
