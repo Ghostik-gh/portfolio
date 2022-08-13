@@ -3,7 +3,7 @@ import { Preloader } from '../components/Preloader';
 function Portfolio() {
   return (
     <>
-      <Preloader />
+      <h1>Nothing here</h1>
     </>
   );
 }
