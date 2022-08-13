@@ -11,6 +11,7 @@ i {
   font-size: 2rem
 }
 
+
 .content {
   min-height: calc(100vh - 70px - 64px);
 }

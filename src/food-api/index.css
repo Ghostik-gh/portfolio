@@ -25,3 +25,29 @@ img, iframe{
 .card-food {
   justify-content: space-between;
 }
+
+@media (max-width: 580px) {
+  .recipe {
+    margin: 5%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .body-recipe {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5%;
+  }
+  .description-recipe{
+    display: flex;
+    flex-direction: column;
+  }
+  .video-recipe {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+.recipe-img{
+  width: 60%;
+}

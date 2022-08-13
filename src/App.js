@@ -7,6 +7,8 @@ import { Category } from './pages/Category';
 import { Recipe } from './pages/Recipe';
 import { FoodAPI } from './pages/FoodAPI';
 import Market from './pages/Market';
+import { About } from './pages/About';
+import { Projects } from './pages/Projects';
 
 function App() {
   return (
@@ -14,10 +16,12 @@ function App() {
       <Routes>
         <Route path="portfolio" element={<Layout />}>
           <Route index element={<Portfolio />} />
-          <Route path="food-api" element={<FoodAPI />} />
-          <Route path="food-api/:name" element={<Category />} />
-          <Route path="food-api/:name/:id" element={<Recipe />} />
-          <Route path="fortnite-market" element={<Market />} />
+          <Route path="about" element={<About />} />
+          <Route path="projects" element={<Projects />} />
+          <Route path="projects/food-api" element={<FoodAPI />} />
+          <Route path="projects/food-api/:name" element={<Category />} />
+          <Route path="projects/food-api/:name/:id" element={<Recipe />} />
+          <Route path="projects/fortnite-market" element={<Market />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>

@@ -7,7 +7,7 @@ function Header() {
         <div className="container">
           <div className="d-flex flex-wrap align-items-center justify-content-center align-content-center flex-direction-column">
             <Link
-              to="/"
+              to="/portfolio"
               className="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none"
             >
               <span id="top" className="py-3">
@@ -17,19 +17,25 @@ function Header() {
 
             <ul className="bd-subnavbar nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center">
               <li>
-                <a href="/#top" className="nav-link px-2 text-white">
+                <Link to="/portfolio" className="nav-link px-2 text-white">
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#projects" className="nav-link px-2 text-white">
+                <Link
+                  to="/portfolio/projects"
+                  className="nav-link px-2 text-white"
+                >
                   Projects
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/#456" className="nav-link px-2 text-white">
+                <Link
+                  to="/portfolio/about"
+                  className="nav-link px-2 text-white"
+                >
                   About
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
