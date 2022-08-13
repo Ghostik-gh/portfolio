@@ -9,6 +9,7 @@ import { FoodAPI } from './pages/FoodAPI';
 import Market from './pages/Market';
 import { About } from './pages/About';
 import { Projects } from './pages/Projects';
+import { MoviesAPI } from './movies-api/components/MoviesAPI';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="projects/food-api/:name" element={<Category />} />
           <Route path="projects/food-api/:name/:id" element={<Recipe />} />
           <Route path="projects/fortnite-market" element={<Market />} />
+          <Route path="projects/movies-api" element={<MoviesAPI />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
