@@ -13,9 +13,6 @@ function Alert() {
     };
     // eslint-disable-next-line
   }, [name]);
-  useEffect(() => {
-    console.log(name);
-  });
   return (
     <div id="toast-container">
       <div className="toast">{name} добавлен в корзину</div>
