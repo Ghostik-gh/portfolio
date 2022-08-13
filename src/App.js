@@ -12,7 +12,7 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path="/portfolio" element={<Layout />}>
+        <Route path="portfolio" element={<Layout />}>
           <Route index element={<Portfolio />} />
           <Route path="food-api" element={<FoodAPI />} />
           <Route path="food-api/:name" element={<Category />} />
