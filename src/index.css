@@ -11,6 +11,15 @@ i {
   font-size: 2rem
 }
 
+.projects{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.right{
+  float: right;
+}
 
 .content {
   min-height: calc(100vh - 70px - 64px);
@@ -45,6 +54,27 @@ i {
   flex-direction: column;
 }
 
+.card-projects {
+  display: flex;
+  flex-direction: column;
+  border-radius: 2px;
+  width: 300px;
+  margin: 20px;
+}
+
 .card-title{
   font-size: large;
+}
+
+.card-projects-body{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+@media (max-width: 580px){
+  .projects{
+    margin: 3rem;
+    margin-right: 2rem;
+  }
 }

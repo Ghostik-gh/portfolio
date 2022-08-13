@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.logo {
+  position: absolute;
+  color: #fff;
+  display: inline-block;
+  font-size: 2.1rem;
+  padding: 0 40%;
+}
+
+.movies {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+  justify-items: center;
+}
+
+.search-btn {
+  position: absolute;
+  top: 0;
+  right: 1rem;
+}
+
+.row {
+  margin-left: auto;
+  margin-right: auto;
+}
+.input-field {
+  position: relative;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.card-movie {
+  margin: 2rem;
+  width: 18rem;
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.card-image-movie {
+  position: relative;
+}
+
+.card-content-movie{
+  display: flex;
+  flex-direction: column;
+  font-size: medium;
+}
+
+.validate-search {
+  width: 100%;
+  height: 38px;
+}
+
+.movie-radio{
+  display: flex;
+}
+
+.with-gap{
+  margin-left: 35px;
+  margin-right: 2px;
+  margin-top: 10px;
+}
+
+.search-movie-btn{
+  display: flex;
+  
+}
