@@ -12,12 +12,12 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path="/" element={<Layout />}>
+        <Route path="/portfolio" element={<Layout />}>
           <Route index element={<Portfolio />} />
-          <Route path="/food-api/" element={<FoodAPI />} />
-          <Route path="/food-api/category/:name" element={<Category />} />
-          <Route path="/food-api/meal/:id" element={<Recipe />} />
-          <Route path="/fortnite-market" element={<Market />} />
+          <Route path="food-api" element={<FoodAPI />} />
+          <Route path="food-api/:name" element={<Category />} />
+          <Route path="food-api/:name/:id" element={<Recipe />} />
+          <Route path="fortnite-market" element={<Market />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>

@@ -11,10 +11,7 @@ function CategoryItem(props) {
         <span className="card-title">{strCategory}</span>
         <p>{strCategoryDescription.slice(0, 100)}...</p>
         <div className="card-action">
-          <Link
-            to={`/food-api/category/${strCategory}`}
-            className="btn btn-dark"
-          >
+          <Link to={`${strCategory}`} className="btn btn-dark">
             Watch Category
           </Link>
         </div>

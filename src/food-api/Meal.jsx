@@ -11,7 +11,7 @@ function Meal(props) {
       <div className="card-body card-food d-flex flex-direction-column align-items-center justify-content-space-between">
         <span className="card-title">{strMeal}</span>
         <div className="card-action">
-          <Link to={`/food-api/meal/${idMeal}`} className="btn btn-dark">
+          <Link to={`${idMeal}`} className="btn btn-dark">
             Watch recipe
           </Link>
         </div>
