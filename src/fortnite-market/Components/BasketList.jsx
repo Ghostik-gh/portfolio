@@ -11,21 +11,25 @@ function BasketList() {
   }, 0);
 
   return (
-    <ui className="collection basket-list card p-3">
-      <li className="basket active">
-        Корзина
-        <i className="bi-x-lg basket-close" onClick={handleBasketShow} />
-      </li>
-      {order.length ? (
-        order.map((item) => <BasketItem key={item.id} {...item} />)
-      ) : (
-        <li className="collection-item">Корзина Пуста</li>
-      )}
-      <li className="collection-item active">Общая стоимость: {totalPrice}</li>
-      <li className="collection-item">
-        <button className="offer-btn">Оформить заказ</button>
-      </li>
-    </ui>
+    <>
+      <ui className="collection basket-list card p-3">
+        <li className="basket active">
+          Корзина
+          <i className="bi-x-lg basket-close" onClick={handleBasketShow} />
+        </li>
+        {order.length ? (
+          order.map((item) => <BasketItem key={item.id} {...item} />)
+        ) : (
+          <li className="collection-item">Корзина Пуста</li>
+        )}
+        <li className="collection-item active">
+          Общая стоимость: {totalPrice}
+        </li>
+        <li className="collection-item">
+          <button className="offer-btn">Оформить заказ</button>
+        </li>
+      </ui>
+    </>
   );
 }
 

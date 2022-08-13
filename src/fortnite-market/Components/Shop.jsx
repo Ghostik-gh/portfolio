@@ -22,6 +22,7 @@ function Shop() {
       })
         .then((response) => response.json())
         .then((data) => {
+          console.log(API_KEY);
           getItems(data.featured);
         })
         .catch((err) => console.error(err));
