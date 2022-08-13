@@ -1,5 +1,4 @@
 function Movie(props) {
-  console.log(props);
   const {
     Title: title,
     Year: year,
