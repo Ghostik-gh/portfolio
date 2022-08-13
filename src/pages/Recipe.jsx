@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { Preloader } from '../food-api/Preloader';
+import { Preloader } from '../components/Preloader';
 import { getMealById } from '../food-api/api';
 
 function Recipe() {

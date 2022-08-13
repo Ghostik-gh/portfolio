@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { getFilteredCategory } from '../food-api/api';
-import { Preloader } from '../food-api/Preloader';
+import { Preloader } from '../components/Preloader';
 
 function Category() {
   const { name } = useParams();

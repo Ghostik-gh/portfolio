@@ -1,4 +1,4 @@
-import { Shop } from '../fortnite-market/Components/Shop';
+import { Shop } from '../fortnite-market/Shop';
 
 import { ContextProvider } from '../fortnite-market/context';
 

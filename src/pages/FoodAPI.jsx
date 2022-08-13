@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { getAllCategories } from '../food-api/api';
-import { Preloader } from '../food-api/Preloader';
+import { Preloader } from '../components/Preloader';
 import { CategoryList } from '../food-api/CategoryList';
 
 function FoodAPI() {
