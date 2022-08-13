@@ -7,16 +7,18 @@ function Alert() {
 
   useEffect(() => {
     const timerId = setTimeout(closeAlert, 3000);
-
     return () => {
       clearTimeout(timerId);
     };
     // eslint-disable-next-line
   }, [name]);
+
   return (
-    <div id="toast-container">
-      <div className="toast">{name} добавлен в корзину</div>
-    </div>
+    <>
+      <div id="toast-container" className="toast-market">
+        {name} добавлен в корзину
+      </div>
+    </>
   );
 }
 

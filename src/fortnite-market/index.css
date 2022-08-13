@@ -138,21 +138,20 @@ li {
 }
 
 #toast-container {
-  top: 3rem !important;
+  padding: 1rem;
+  bottom: 2rem;
+  right: 6rem;
+  font-size: large;
   animation: fade-in 500ms ease-in-out;
-}
-@media (min-width: 767px) {
-  #toast-container {
-    top: 5rem;
-    left: 1rem;
-    bottom: unset;
-  }
+  background-color: grey;
+  color: black;
+  border-radius: 10px;
 }
 
 @keyframes fade-in {
   from {
       opacity: 0;
-      transform: translateY(2rem);
+      transform: translateY(1rem);
   }
   to {
       opacity: 1;
@@ -188,4 +187,12 @@ justify-content: space-around;
 .close-btn{
   float: right;
   justify-self: end;
+}
+
+.z-index {
+  z-index: 11;
+}
+
+.toast-market{
+  position: fixed;
 }
