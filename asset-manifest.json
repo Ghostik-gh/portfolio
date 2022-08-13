@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.7265e3ba.css",
-    "main.js": "/portfolio/static/js/main.939bf492.js",
+    "main.js": "/portfolio/static/js/main.a26c320b.js",
     "static/media/food.jpg": "/portfolio/static/media/food.792e7c4b50514d606d92.jpg",
     "static/media/movies-api.jpg": "/portfolio/static/media/movies-api.2c84fec881836974d562.jpg",
     "static/media/market.jpg": "/portfolio/static/media/market.115c8a939c8528475316.jpg",
     "static/media/fortnite_alt.jpg": "/portfolio/static/media/fortnite_alt.9210faa9b989cafe4950.jpg",
     "index.html": "/portfolio/index.html",
     "main.7265e3ba.css.map": "/portfolio/static/css/main.7265e3ba.css.map",
-    "main.939bf492.js.map": "/portfolio/static/js/main.939bf492.js.map"
+    "main.a26c320b.js.map": "/portfolio/static/js/main.a26c320b.js.map"
   },
   "entrypoints": [
     "static/css/main.7265e3ba.css",
-    "static/js/main.939bf492.js"
+    "static/js/main.a26c320b.js"
   ]
 }
