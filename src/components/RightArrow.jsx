@@ -6,7 +6,7 @@ function RightArrow(props) {
     <>
       <div className="right-arrow">
         <Link to={to}>
-          <i class="bi bi-chevron-right navigate-i"></i>
+          <i className="bi bi-chevron-right navigate-i"></i>
         </Link>
       </div>
     </>
