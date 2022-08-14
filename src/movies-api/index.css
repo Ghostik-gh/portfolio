@@ -56,6 +56,8 @@ body {
   display: flex;
   flex-direction: column;
   font-size: medium;
+  padding: 1rem;
+  
 }
 
 .validate-search {

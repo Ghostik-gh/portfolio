@@ -78,3 +78,30 @@ i {
     margin-right: 2rem;
   }
 }
+
+.right-arrow{
+  width: 40px;
+  position: fixed;
+  top: 50%;
+  right: 1rem;
+}
+
+.left-arrow{
+  width: 40px;
+  position: fixed;
+  top: 50%;
+  left: 1rem;
+}
+
+@media (max-width: 600px){
+  .right-arrow{
+    display: none;
+  }
+  .left-arrow{
+    display: none;
+  }
+}
+
+.navigate-i{
+  font-size: 3rem;
+}
