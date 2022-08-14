@@ -1,0 +1,26 @@
+{
+    "movie": {
+        "id": "1",
+        "to": "movies-api",
+        "title": "Movies-API",
+        "img": "https://moviestart.ru/wp-content/uploads/2021/08/tablet_hands-scaled.jpg",
+        "description": "Here you can find any movie or TV series and a lot of information about it",
+        "btnText": "Watch"
+    },
+    "fortnite": {
+        "id": "2",
+        "to": "fortnite-market",
+        "title": "Fortnite-daily",
+        "img": "https://i.playground.ru/p/OdES9qCxS7ZwwK69BZnp2A.jpeg",
+        "description": "Here you can find Fortnite daily Shop and calculate your order",
+        "btnText": "Watch"
+    },
+    "food": {
+        "id": "3",
+        "to": "food-api",
+        "title": "Recipe-API",
+        "img": "https://alfagym.ru/wp-content/uploads/b/0/9/b097cc39aab6957d6550431af9dec482.jpeg",
+        "description": "Here you can find many recipes with a table of ingredients and videos",
+        "btnText": "Watch"
+    }
+}
