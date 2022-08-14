@@ -1,19 +1,17 @@
 import { useState, useEffect } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import { Preloader } from '../components/Preloader';
-import { getMealById } from '../food-api/api';
+import { getMealById } from './api';
 
 function Recipe() {
   const { id } = useParams();
   const [recipe, setRecipe] = useState({});
-  const navigate = useNavigate();
 
   useEffect(() => {
     getMealById(id).then((data) => {
       setRecipe(data.meals[0]);
     });
   }, [id]);
-
   return (
     <>
       {!recipe.idMeal ? (
@@ -72,10 +70,6 @@ function Recipe() {
           </div>
         </div>
       )}
-      <i
-        className="fixed-bottom ms-4 mb-4 bi-arrow-left arrow-left"
-        onClick={() => navigate(-1)}
-      />
     </>
   );
 }

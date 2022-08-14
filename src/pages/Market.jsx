@@ -12,4 +12,4 @@ function Market() {
   );
 }
 
-export default Market;
+export { Market };

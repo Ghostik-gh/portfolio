@@ -1,9 +1,14 @@
 import { CategoryItem } from './CategoryItem';
 import { useNavigate } from 'react-router-dom';
+import { useEffect } from 'react';
 
 function CategoryList(props) {
   const { catalog } = props;
   const navigate = useNavigate();
+
+  useEffect(() => {
+    console.log(catalog);
+  });
 
   return (
     <>

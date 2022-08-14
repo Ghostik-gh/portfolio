@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Search } from './Search';
 import { Movies } from './Movies';
-import { Preloader } from './Preloader';
+import { Preloader } from '../../components/Preloader';
 import { useNavigate } from 'react-router-dom';
 
 const API_KEY = process.env.REACT_APP_API_KEY_MOVIE;
