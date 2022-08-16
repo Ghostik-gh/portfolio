@@ -1,0 +1,3 @@
+function reducer() {}
+
+export { reducer };
