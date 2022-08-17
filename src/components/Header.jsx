@@ -1,9 +1,14 @@
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 
 function Header() {
   const user = useSelector((state) => state.user);
-
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
+  const logOut = () => {
+    dispatch({ type: 'LOG_OUT' });
+    navigate('/portfolio', { replace: true });
+  };
   return (
     <>
       <header className="text-bg-dark">
@@ -34,11 +39,18 @@ function Header() {
                   About
                 </Link>
               </li>
-              <li>
-                <Link to="/login" className="nav-link px-2 text-white">
-                  Login
-                </Link>
-              </li>
+              {user.isLogin ? (
+                <li>
+                  <span>{user.name}</span>
+                  <button onClick={() => logOut()}>Exit</button>
+                </li>
+              ) : (
+                <li>
+                  <Link to="/login" className="nav-link px-2 text-white">
+                    Login
+                  </Link>
+                </li>
+              )}
             </ul>
           </div>
         </div>
