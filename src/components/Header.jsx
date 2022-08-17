@@ -13,17 +13,17 @@ function Header() {
     <>
       <header className="text-bg-dark">
         <div className="container">
-          <div className="d-flex flex-wrap align-items-center justify-content-center align-content-center flex-direction-column">
+          <div className="header-nav">
             <Link
               to="/portfolio"
-              className="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none"
+              className="d-flex mb-2 mb-lg-0 text-white text-decoration-none"
             >
               <span id="top" className="py-3">
                 Portfolio Ghostik-gh
               </span>
             </Link>
 
-            <ul className="bd-subnavbar nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center">
+            <ul className="nav col-12 mb-2">
               <li>
                 <Link to="/portfolio" className="nav-link px-2 text-white">
                   Home
@@ -39,18 +39,18 @@ function Header() {
                   About
                 </Link>
               </li>
-              {user.isLogin ? (
-                <li>
-                  <span>{user.name}</span>
-                  <button onClick={() => logOut()}>Exit</button>
-                </li>
-              ) : (
-                <li>
+              <li className="last-li">
+                {user.isLogin ? (
+                  <>
+                    <span className="p-2">{user.name}</span>
+                    <button onClick={() => logOut()}>Exit</button>
+                  </>
+                ) : (
                   <Link to="/login" className="nav-link px-2 text-white">
                     Login
                   </Link>
-                </li>
-              )}
+                )}
+              </li>
             </ul>
           </div>
         </div>

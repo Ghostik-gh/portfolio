@@ -25,7 +25,7 @@ function Login() {
   return (
     <>
       <div>Login: {user.name}!</div>
-      <div>From {fromPage}</div>
+      {fromPage === '/about' ? <>Enter your name to see AboutPage</> : null}
       <form onSubmit={handleSubmit}>
         <label>
           <input type="text" placeholder="input name" name="username" />

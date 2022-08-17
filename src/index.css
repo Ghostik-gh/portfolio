@@ -105,3 +105,17 @@ i {
 .navigate-i{
   font-size: 3rem;
 }
+
+.header-nav{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav {
+  align-items: center;
+  padding: 0 1rem;
+  justify-content: center;
+}
