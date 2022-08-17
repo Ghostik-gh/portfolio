@@ -10,7 +10,8 @@ import { Market } from './pages/Market';
 import { About } from './pages/About';
 import { Projects } from './pages/Projects';
 import { MoviesAPI } from './movies-api/components/MoviesAPI';
-
+import { Login } from './pages/Login';
+import { RequireAuth } from './hoc/RequireAuth';
 function App() {
   return (
     <>
@@ -18,13 +19,21 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Portfolio />} />
           <Route path="portfolio" element={<Portfolio />} />
-          <Route path="about" element={<About />} />
+          <Route
+            path="about"
+            element={
+              <RequireAuth>
+                <About />
+              </RequireAuth>
+            }
+          />
           <Route path="projects" element={<Projects />} />
           <Route path="projects/food-api" element={<FoodAPI />} />
           <Route path="projects/food-api/:name" element={<Category />} />
           <Route path="projects/food-api/:name/:id" element={<RecipePage />} />
           <Route path="projects/fortnite-market" element={<Market />} />
           <Route path="projects/movies-api" element={<MoviesAPI />} />
+          <Route path="login" element={<Login />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>

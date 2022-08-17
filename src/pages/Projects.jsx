@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import { LeftArrow } from '../components/LeftArrow';
 import { ProjectCard } from '../components/ProjectCard';
 import { RightArrow } from '../components/RightArrow';

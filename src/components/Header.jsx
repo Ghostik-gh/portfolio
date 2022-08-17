@@ -1,6 +1,9 @@
 import { Link } from 'react-router-dom';
+import { useSelector, useDispatch } from 'react-redux';
 
 function Header() {
+  const user = useSelector((state) => state.user);
+
   return (
     <>
       <header className="text-bg-dark">
@@ -29,6 +32,11 @@ function Header() {
               <li>
                 <Link to="/about" className="nav-link px-2 text-white">
                   About
+                </Link>
+              </li>
+              <li>
+                <Link to="/login" className="nav-link px-2 text-white">
+                  Login
                 </Link>
               </li>
             </ul>
