@@ -7,6 +7,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+img, iframe{
+  max-width: 100%;
+}
+
 i {
   font-size: 2rem
 }
@@ -22,7 +26,7 @@ i {
 }
 
 .content {
-  min-height: calc(100vh - 70px - 64px);
+  min-height: calc(100vh - 104px - 81px);
 }
 
 .discord {
