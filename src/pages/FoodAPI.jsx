@@ -14,7 +14,7 @@ function FoodAPI() {
   }, []);
 
   return (
-    <div className="">
+    <div className="container">
       {!catalog.length ? <Preloader /> : <CategoryList catalog={catalog} />}
     </div>
   );

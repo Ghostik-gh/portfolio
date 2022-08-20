@@ -14,7 +14,11 @@ function Category() {
     getFilteredCategory(name).then((data) => setMeals(data.meals));
   }, [name]);
 
-  return <>{!meals.length ? <Preloader /> : <MealList meals={meals} />}</>;
+  return (
+    <div className="container">
+      {!meals.length ? <Preloader /> : <MealList meals={meals} />}
+    </div>
+  );
 }
 
 export { Category };

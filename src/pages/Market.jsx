@@ -4,11 +4,11 @@ import { ContextProvider } from '../fortnite-market/context';
 
 function Market() {
   return (
-    <>
+    <div className="container">
       <ContextProvider>
         <Shop />
       </ContextProvider>
-    </>
+    </div>
   );
 }
 

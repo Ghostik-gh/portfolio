@@ -23,7 +23,7 @@ function Login() {
   };
 
   return (
-    <>
+    <div className="container">
       <div>Login: {user.name}!</div>
       {fromPage === '/about' ? <>Enter your name to see AboutPage</> : null}
       <form onSubmit={handleSubmit}>
@@ -32,7 +32,7 @@ function Login() {
         </label>
         <button className="btn btn-dark">Autorization</button>
       </form>
-    </>
+    </div>
   );
 }
 

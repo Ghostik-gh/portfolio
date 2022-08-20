@@ -6,7 +6,7 @@ function Projects() {
   const data = require('../static/info-about-projects.json');
 
   return (
-    <>
+    <div className="container">
       <LeftArrow to={'/portfolio'} />
       <div id="projects" className="projects">
         {Object.values(data).map((project) => (
@@ -14,7 +14,7 @@ function Projects() {
         ))}
       </div>
       <RightArrow to={'/about'} />
-    </>
+    </div>
   );
 }
 
