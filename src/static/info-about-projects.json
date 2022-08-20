@@ -22,5 +22,13 @@
         "img": "https://alfagym.ru/wp-content/uploads/b/0/9/b097cc39aab6957d6550431af9dec482.jpeg",
         "description": "Here you can find many recipes with a table of ingredients and videos",
         "btnText": "Watch"
+    },
+    "css": {
+        "id": "4",
+        "to": "css",
+        "title": "CSS",
+        "img": "https://i.pinimg.com/originals/19/8e/bb/198ebbc7593736046974c748118833db.png",
+        "description": "Here I study CSS and save favorite patterns",
+        "btnText": "Watch"
     }
 }
