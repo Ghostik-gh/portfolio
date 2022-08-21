@@ -1,7 +1,9 @@
-.content{
-    width: 100vw;
+.side-bar{
+    min-height: calc(100vh - 104px - 81px); 
+    width: 240px;
+    background-color: #41454c;
 }
 
-.side-bar{
-    width: 240px;
+.active{
+    background-color: #212529;
 }
