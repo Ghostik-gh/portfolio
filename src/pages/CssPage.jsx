@@ -5,6 +5,7 @@ function CssPage() {
   return (
     <>
       <SideBar />
+      Some text
     </>
   );
 }

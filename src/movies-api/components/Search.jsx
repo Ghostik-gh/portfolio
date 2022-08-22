@@ -18,7 +18,7 @@ function Search(props) {
   };
 
   return (
-    <div className="row">
+    <div className="search-row">
       <div className="input-field">
         <div className="search-movie-btn">
           <input

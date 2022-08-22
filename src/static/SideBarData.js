@@ -1,8 +1,8 @@
 const SideBarData = [
   {
-    title: '1',
+    title: 'Some text',
     to: '/',
-    icon: '',
+    icon: <i class="bi bi-1-circle"></i>,
   },
 ];
 
