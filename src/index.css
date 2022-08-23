@@ -17,7 +17,6 @@ i {
 
 .app{
   min-height: calc(100vh - 104px - 81px);
-  width: 100vw;
 }
 
 .projects{
@@ -127,4 +126,14 @@ i {
   align-items: center;
   padding: 0 1rem;
   justify-content: center;
+}
+
+.header {
+  background-color: #060b26;
+}
+
+.username{
+  margin-left: 2rem;
+  padding: 10px;
+  color: #f1f1f1;
 }

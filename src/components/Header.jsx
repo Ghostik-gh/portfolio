@@ -11,12 +11,12 @@ function Header() {
   };
   return (
     <>
-      <header className="text-bg-dark">
+      <header className="header">
         <div className="container">
           <div className="header-nav">
             <Link
               to="/portfolio"
-              className="d-flex mb-2 mb-lg-0 text-white text-decoration-none"
+              className="d-flex text-white text-decoration-none"
             >
               <span id="top" className="py-3">
                 Portfolio Ghostik-gh
@@ -42,7 +42,7 @@ function Header() {
               <li className="last-li">
                 {user.isLogin ? (
                   <>
-                    <span className="p-2">{user.name}</span>
+                    <span className="username">{user.name}</span>
                     <button onClick={() => logOut()}>Exit</button>
                   </>
                 ) : (

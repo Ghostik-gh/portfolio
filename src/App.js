@@ -35,7 +35,9 @@ function App() {
           <Route path="projects/food-api/:name/:id" element={<RecipePage />} />
           <Route path="projects/fortnite-market" element={<Market />} />
           <Route path="projects/movies-api" element={<MoviesPage />} />
-          <Route path="projects/css" element={<CssPage />} />
+          <Route path="projects/css" element={<CssPage />}>
+            <Route path="*" element={<NotFound />} />
+          </Route>
           <Route path="login" element={<Login />} />
           <Route path="*" element={<NotFound />} />
         </Route>
