@@ -12,7 +12,7 @@ function BasketList() {
 
   return (
     <>
-      <ui className="collection basket-list card p-3">
+      <ul className="collection basket-list card p-3">
         <li className="basket active">
           Корзина
           <i className="bi-x-lg basket-close" onClick={handleBasketShow} />
@@ -28,7 +28,7 @@ function BasketList() {
         <li className="collection-item">
           <button className="offer-btn">Оформить заказ</button>
         </li>
-      </ui>
+      </ul>
     </>
   );
 }

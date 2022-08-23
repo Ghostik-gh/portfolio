@@ -1,12 +1,16 @@
 .side-bar{
-    min-height: calc(100vh - 104px - 81px); 
+    min-height: 100vh; 
     width: 240px;
     background-color: #41454c;
     margin: 0px;
+    position: fixed;
+    left: -100%;
+    transition: 500ms;
 }
 
-.active{
-    background-color: #212529;
+.side-bar.active{
+    left: 0;
+    transition: 500ms;
 }
 
 .link-unset {
@@ -35,4 +39,18 @@
 
 .side-bar-row .title{
     flex: 70%;
+}
+
+#active-row {
+    background-color: #212529;
+}
+
+.side-bar-icon {
+    cursor: pointer;
+    font-size: 3rem;
+    color: #f1f1f1;
+    position: fixed;
+    margin: 0;
+    top: 50px;
+    left: 20px;
 }
