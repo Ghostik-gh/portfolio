@@ -1,0 +1,13 @@
+.photos{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.photos .card-second{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    margin: 1rem;
+    width: 150px;
+}

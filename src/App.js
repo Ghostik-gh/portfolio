@@ -13,6 +13,7 @@ import { Login } from './pages/Login';
 import { RequireAuth } from './hoc/RequireAuth';
 import { CssPage } from './pages/CssPage';
 import { MoviesPage } from './pages/MoviesPage';
+import SecondCSSPage from './pages/SecondCSSPage';
 
 function App() {
   return (
@@ -35,7 +36,8 @@ function App() {
           <Route path="projects/food-api/:name/:id" element={<RecipePage />} />
           <Route path="projects/fortnite-market" element={<Market />} />
           <Route path="projects/movies-api" element={<MoviesPage />} />
-          <Route path="projects/css" element={<CssPage />}>
+          <Route path="projects/css/" element={<CssPage />}>
+            <Route path="2" element={<SecondCSSPage />} />
             <Route path="*" element={<NotFound />} />
           </Route>
           <Route path="login" element={<Login />} />

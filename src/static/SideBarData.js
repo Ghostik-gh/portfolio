@@ -6,7 +6,7 @@ const SideBarData = [
   },
   {
     title: '2',
-    to: '/projects/css/some',
+    to: '/projects/css/2',
     icon: <i className="bi bi-2-circle"></i>,
   },
   {
