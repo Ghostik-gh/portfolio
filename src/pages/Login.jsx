@@ -1,5 +1,6 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { useLocation, useNavigate } from 'react-router-dom';
+import { action_login_user } from '../store/ActionCreatorUser';
 
 function Login() {
   const dispatch = useDispatch();
@@ -11,7 +12,8 @@ function Login() {
   const fromPage = location.state?.from?.pathname || '/portfolio';
 
   const logIn = (name) => {
-    dispatch({ type: 'LOGIN_USER', payload: name });
+    dispatch(action_login_user(name));
+    // { type: 'LOGIN_USER', payload: name }
     navigate(fromPage, { replace: true });
   };
 

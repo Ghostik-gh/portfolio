@@ -1,12 +1,13 @@
 import { Link, useNavigate } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
+import { action_logout_user } from '../store/ActionCreatorUser';
 
 function Header() {
   const user = useSelector((state) => state.user);
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const logOut = () => {
-    dispatch({ type: 'LOG_OUT' });
+    dispatch(action_logout_user());
     navigate('/portfolio', { replace: true });
   };
   return (
