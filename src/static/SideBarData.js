@@ -1,11 +1,11 @@
 const SideBarData = [
   {
     title: 'Home',
-    to: '/projects/css',
+    to: '/projects/css/1',
     icon: <i className="bi bi-1-circle"></i>,
   },
   {
-    title: '2',
+    title: 'Dynamic pagination',
     to: '/projects/css/2',
     icon: <i className="bi bi-2-circle"></i>,
   },

@@ -7,6 +7,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.bi-discord:hover {
+  color: var(--bs-link-hover-color);
+}
+
 img, iframe{
   max-width: 100%;
 }
@@ -38,14 +42,6 @@ i {
   color: var(--bs-link-color);
 }
 
-.smt {
-  height: 30rem;
-  justify-items: center;
-  display: flex;
-  align-content: center;
-  align-items: center;
-  justify-content: center;
-}
 .arrow-left{
   width: 42px;
   height: 42px;

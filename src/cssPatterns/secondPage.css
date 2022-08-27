@@ -1,13 +1,17 @@
 .photos{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .photos .card-second{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: start;
-    margin: 1rem;
-    width: 150px;
+    justify-content: flex-start;
+    margin: 2rem 2rem;
+    max-width: 156px;
+
+    border-radius: 5px;
+    border: solid black 3px;
 }
