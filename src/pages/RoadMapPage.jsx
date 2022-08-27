@@ -1,5 +1,5 @@
 import React from 'react';
-
+import '../cssPatterns/roadMap.scss';
 function RoadMapPage() {
   return (
     <>

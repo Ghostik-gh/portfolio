@@ -1,0 +1,58 @@
+.robot-card{
+
+    display: flex;
+    justify-content: space-between;
+    max-width: 700px;
+    padding: 1rem;
+
+    border-radius: 5px;
+    border: solid black 2px;
+
+    .robot-content{
+        display: flex;
+        flex-direction: column;
+        .robot-icon{
+            font-size: 10rem;
+        }
+
+        .robot-description{
+            font-size: large;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .watch{
+
+            background-color: #6C757D;
+            color: #D7FFE5;
+            &:hover{
+            }
+        }
+    }
+}
+
+.popap{
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    background-color: rgba($color: #000000, $alpha: 0.4);
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    .modal-content{
+        border-radius: 10px;
+        max-width: 80%;
+        background-color: #FFFFFF;
+
+        a {
+            background-color: #B5B5B5;
+            height: 2rem;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}

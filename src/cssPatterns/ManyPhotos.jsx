@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 
 function ManyPhotos() {
   const [countPage, setCountPage] = useState(1);
-  const [totalPhotos, setTotalPhotos] = useState(50);
+  const [totalPhotos, setTotalPhotos] = useState(11);
   const [photos, setPhotos] = useState([]);
   const [fetching, setFetching] = useState(true);
 
@@ -19,24 +19,19 @@ function ManyPhotos() {
     }
   };
 
-  const getPhotos = () => {
-    axios
-      .get(
-        `https://jsonplaceholder.typicode.com/photos?_limit=10&_page=${countPage}`
-      )
-      .then((response) => {
-        setTotalPhotos(response.headers['x-total-count']);
-        setPhotos([...photos, ...response.data]);
-      })
-      .finally(setFetching(false));
-  };
-
   useEffect(() => {
     if (fetching) {
-      getPhotos();
-      setCountPage((prevPage) => prevPage + 1);
+      axios
+        .get(
+          `https://jsonplaceholder.typicode.com/photos?_limit=10&_page=${countPage}`
+        )
+        .then((response) => {
+          setTotalPhotos(response.headers['x-total-count']);
+          setPhotos([...photos, ...response.data]);
+          setCountPage(countPage + 1);
+        })
+        .finally(setFetching(false));
     }
-
     // eslint-disable-next-line
   }, [fetching]);
 
