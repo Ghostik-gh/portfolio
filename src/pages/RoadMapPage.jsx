@@ -4,7 +4,7 @@ function RoadMapPage() {
   return (
     <>
       <img
-        src="https://github.com/Ghostik-gh/portfolio/blob/master/src/static/roadmap.png?raw=true"
+        src="https://github.com/Ghostik-gh/portfolio/blob/master/src/static/roadmap.webp"
         alt="Road Map"
       />
     </>
