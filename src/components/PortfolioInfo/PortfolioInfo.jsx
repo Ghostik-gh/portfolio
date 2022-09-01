@@ -30,7 +30,8 @@ function PortfolioInfo() {
           <p className={styles.description}>
             I'm a second-year student at Moscow Technical University of
             Communications and Informatics. At the moment I'm styding React! You
-            can see my progress on <Link to="/about">About page</Link>
+            can see my skills on <Link to="/about">About page</Link> or{' '}
+            <Link to="/projects">my Projects</Link>
           </p>
           <div onClick={changeNum}>
             <ChangeCat cat={cats[numCat]} onClick={changeNum} />
