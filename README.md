@@ -5,8 +5,7 @@
 - Redux
 - Axios
 
-### CSS:
+### SCSS:
 
 - Bootstrap
-- Materialize (currently not in use)
 - [React-icons](https://react-icons.github.io/react-icons/)
