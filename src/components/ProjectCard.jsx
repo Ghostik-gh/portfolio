@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import styles from './ProjectCard.module.scss';
+
 function ProjectCard(props) {
   const {
     to = '/portfolio',
@@ -11,14 +13,20 @@ function ProjectCard(props) {
 
   return (
     <>
-      <div className="card-projects card">
-        <img src={img} className="card-img-top" alt="..." />
-        <div className="card-body card-projects-body">
-          <h5 className="card-title">{title}</h5>
-          <p className="card-text">{description}</p>
-          <Link to={to} className="btn btn-secondary">
-            {btnText}
-          </Link>
+      <div className={styles.container}>
+        <div className={styles.card}>
+          {/* <div className={styles.center}> */}
+          <div className={styles.front}>
+            <img src={img} className="" alt="..." />
+          </div>
+          <div className={styles.back}>
+            <h4 className="">{title}</h4>
+            <p className="">{description}</p>
+            <Link to={to} className="">
+              {btnText}
+            </Link>
+          </div>
+          {/* </div> */}
         </div>
       </div>
     </>

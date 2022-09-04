@@ -1,0 +1,59 @@
+.container{
+    margin: auto;
+    width: 100%;
+    height: calc(100vh - 104px - 81px);;
+
+    * { 
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    }
+    .card{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 500px;
+        width: 480px;
+        
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
+
+        .front, .back{
+            position: absolute;
+            overflow: hidden;
+            backface-visibility: hidden;
+        }
+
+        .front{
+
+            transform: perspective(600px) rotateY(0deg);
+            
+        }
+        &:hover > .front{
+            transform: perspective(600px) rotateY(-180deg);
+        }
+    
+        .back{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 480px;
+
+            
+            transform: perspective(600px) rotateY(180deg);
+            background-color: #f1f1f1;
+            transition: transform .1s linear;
+        }
+        &:hover > .back{                
+            transform: perspective(600px) rotateY(0deg);
+        }
+
+        // .center{
+        //     position: absolute;
+        //     top: 50%;
+        //     left: 50%;
+        //     transform: translate(-50%, -50%);
+        // }
+    }
+}
