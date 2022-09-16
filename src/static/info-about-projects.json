@@ -23,6 +23,14 @@
         "description": "Here you can find many recipes with a table of ingredients and videos",
         "btnText": "Watch"
     },
+    "TS": {
+        "id": "5",
+        "to": "https://ghostik-gh.github.io/API/",
+        "title": "Covid-19 Statistic",
+        "img": "https://sun9-63.userapi.com/impg/_e2HrFDuSk51wFXASLSN1pXMRl70hbR6dD5r4A/ho8SB5FiFEw.jpg?size=984x657&quality=96&sign=e3db2e4a1526858132fb50637b980aea&c_uniq_tag=joi87Yr33BR5Hcx5ZZuQNg2yezYJBtrYmeEGRJpscjU&type=album",
+        "description": "Here you can find information about covid and some available statistics",
+        "btnText": "Watch"
+    },
     "css": {
         "id": "4",
         "to": "css/1",

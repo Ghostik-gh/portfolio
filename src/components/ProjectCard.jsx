@@ -20,11 +20,15 @@ function ProjectCard(props) {
             <img src={img} className="" alt="..." />
           </div>
           <div className={styles.back}>
-            <h4 className="">{title}</h4>
+            <h1 className="">{title}</h1>
             <p className="">{description}</p>
-            <Link to={to} className="">
-              {btnText}
-            </Link>
+            {to.slice(0, 4) === 'http' ? (
+              <a href={to}> {btnText}</a>
+            ) : (
+              <Link to={to} className="">
+                {btnText}
+              </Link>
+            )}
           </div>
           {/* </div> */}
         </div>

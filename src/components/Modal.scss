@@ -8,13 +8,12 @@
     .robot-content{
         padding: 30px;
         border-radius: 5px;
-        border: solid black 2px;
 
         display: flex;
         flex-direction: column;
         align-items: center;
         .robot-icon{
-            font-size: 10rem;
+            font-size: 20rem;
         }
 
         .robot-description{
@@ -25,7 +24,7 @@
         .watch{
 
             background-color: #6C757D;
-            color: #D7FFE5;
+            color: white;
             &:hover{
                 background-color: #295071;
                 color: #D7FFE5;
@@ -46,12 +45,15 @@
     justify-content: center;
     
     .modal-content{
+        padding: 20px;
         border-radius: 10px;
         max-width: 80%;
-        background-color: #FFFFFF;
-
+        background-color: #94e9f69f;
+        > img{
+            border-radius: 5px;
+        }
         a {
-            background-color: #B5B5B5;
+            color:  black;
             height: 2rem;
             text-decoration: none;
             display: flex;
